@@ -4,8 +4,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 import time
-import re
-clean = re.compile("<.*?>")
 
 #Chrome options and driver
 chrome_options = Options()
