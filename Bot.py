@@ -20,7 +20,7 @@ driver.get("https://web.whatsapp.com")
 
 id_file = "ids.txt"
 group2 = "TEST2" # Group 1
-group1 = "TEST" #
+group1 = "TEST" # Group 2
 
 def repeat():
     sourceGroupSelector = driver.find_elements(By.CSS_SELECTOR, f'span[title="{group1}"]')
