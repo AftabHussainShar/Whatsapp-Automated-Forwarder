@@ -13,7 +13,7 @@ chrome_options.add_argument("--disable-blink-features=AutomationControlled")
 chrome_options.add_argument("--disable-notifications")
 chrome_options.add_argument("--disable-geolocation")
 chrome_options.add_argument("--disable-features=Geolocation")
-service = Service(ChromeDriverManager().install())
+service = Service()
 driver = webdriver.Chrome(service=service, options=chrome_options)
 driver.maximize_window()
 from time import time, sleep
