@@ -23,7 +23,7 @@ group2 = "TEST2" # Group 1
 group1 = "TEST" # Group 2
 
 def repeat():
-    sourceGroupSelector = driver.find_elements(By.CSS_SELECTOR, '//div[@class="_amjv _aotl"]')
+    sourceGroupSelector = driver.find_elements(By.CSS_SELECTOR, '//div[@class="_amje _aotl"]')
     if len(sourceGroupSelector) > 0:
         sourceGroupSelector[0].click()
 
@@ -34,23 +34,22 @@ def repeat():
             file.seek(0)
             existing_ids = set(file.read().splitlines())  
             for i, item in enumerate(all_rows, start=1):
-                id = item.get_attribute("data-id")
                 if id not in existing_ids:
                     try:
-                        download_button = item.find_element(By.CSS_SELECTOR, 'span[data-icon="audio-download"]')
+                        download_button = item.find_element(By.CSS_SELECTOR, '//div[@class="_amjv we"]')
                         download_button.click()
                     except:
                         print("No download button found")
                     sleep(5)        
                     try:
-                        forward_button = item.find_element(By.CSS_SELECTOR, 'span[data-icon="forward-chat"]')
+                        forward_button = item.find_element(By.CSS_SELECTOR, '//div[@class="_amjv ho"]')
                         forward_button.click()
                         time.sleep(3)
                     except:
                         print("No forward button found")
                     sleep(3)
                     try:
-                        targetGroupSelector = driver.find_elements(By.CSS_SELECTOR,f'span[title="{group2}"]')
+                        targetGroupSelector = driver.find_elements(By.CSS_SELECTOR,'//div[@class=" ta"]')
                         targetGroupSelector[0].click()
                     except:
                         print("No group button found")
