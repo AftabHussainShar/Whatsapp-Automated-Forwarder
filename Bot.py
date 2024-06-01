@@ -23,10 +23,8 @@ group2 = "TEST2" # Group 1
 group1 = "TEST" # Group 2
 
 def repeat():
-    sourceGroupSelector = driver.find_elements(By.CSS_SELECTOR, f'span[title="{group1}"]')
+    sourceGroupSelector = driver.find_elements(By.CSS_SELECTOR, '//div[@class="_amjv _aotl"]')
     if len(sourceGroupSelector) > 0:
-        # print("Group found ")
-        # print(len(sourceGroupSelector))
         sourceGroupSelector[0].click()
 
     if len(sourceGroupSelector) > 0:
