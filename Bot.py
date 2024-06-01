@@ -19,7 +19,7 @@ driver.get("https://web.whatsapp.com")
 
 
 id_file = "ids.txt"
-group2 = "TEST2" #
+group2 = "TEST2" # Group 1
 group1 = "TEST" #
 
 def repeat():
